@@ -1,5 +1,5 @@
-SRCS =	MyAwesomePhoneBook.cpp
-CC =	c++ -Wall -Werror -Wextra -std=c++98
+SRCS =	MyAwesomePhoneBook.cpp PhoneBook.cpp
+CC =	c++ -std=c++98
 NAME =	megaphone
 OBJS =	$(SRCS:.cpp=.o)
 
