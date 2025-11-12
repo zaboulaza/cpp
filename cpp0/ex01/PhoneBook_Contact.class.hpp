@@ -13,14 +13,13 @@
 #pragma once
 
 class Contact {
-    
+    // contact fields (to be filled later)
 };
 
 class PhoneBook {
-    
     private:
-    Contact contact[8];
-    
+        Contact contact[8];
+
     public:
-    
+        // phonebook methods will go here
 };
