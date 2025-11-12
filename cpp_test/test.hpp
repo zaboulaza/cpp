@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 21:41:33 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/10 22:56:26 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/11 15:44:43 by zaboulaza        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 # define TEST_CPP
 
 class Sample {
+    
     public:
 
-    int x;
+    int foo;
+    
     Sample(void);
-    Sample(int value);
     ~Sample(void);
+    
+    void bar(void);
 };
 
 #endif

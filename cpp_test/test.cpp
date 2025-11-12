@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   test.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 21:41:37 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/10 22:57:40 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/11 15:47:02 by zaboulaza        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,15 @@
 
 Sample::Sample(void){
     std::cout << "Constructor called" << std::endl;
-    x = 10;
-    return;
-}
-
-Sample::Sample(int value){
-    std::cout << "parameter Constructor called" << std::endl;
-    x = value;
     return;
 }
 
 Sample::~Sample(void){
-    std::cout << "Destructor called for instance whose value is " << x << std::endl;
+    std::cout << "Destructor called" << std::endl;
+    return;
+}
+
+void Sample::bar(void){
+    std::cout << "fonction bar call" << std::endl;
     return;
 }
