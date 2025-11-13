@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 11:34:38 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/13 19:03:14 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/13 19:56:25 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,5 +121,5 @@ int PhoneBook::find_Secret(std::string secret){
     }
     else
         contact[i].set_darkest_secret(secret);
-    return (0);
+    return (1);
 }

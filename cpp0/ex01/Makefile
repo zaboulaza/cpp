@@ -1,6 +1,10 @@
-SRCS =	MyAwesomePhoneBook.cpp PhoneBook.cpp PhoneBookUtils.cpp PhoneBookUtils2.cpp
+SRCS =	MyAwesomePhoneBook.cpp \
+		PhoneBook.cpp \
+		Contact.setter.cpp \
+		Contact.getter.cpp \
+		PhoneBookUtils.cpp
 CC =	c++ -std=c++98
-NAME =	megaphone
+NAME =	PhoneBook
 OBJS =	$(SRCS:.cpp=.o)
 
 all : $(NAME)
