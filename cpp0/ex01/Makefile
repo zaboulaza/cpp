@@ -1,4 +1,4 @@
-SRCS =	MyAwesomePhoneBook.cpp PhoneBook.cpp
+SRCS =	MyAwesomePhoneBook.cpp PhoneBook.cpp PhoneBookUtils.cpp PhoneBookUtils2.cpp
 CC =	c++ -std=c++98
 NAME =	megaphone
 OBJS =	$(SRCS:.cpp=.o)
