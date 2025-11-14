@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 20:43:33 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/13 20:22:28 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/14 15:48:44 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ class Contact {
         std::string get_nickname(void);
         std::string get_phone_number(void);
         std::string get_darkest_secret(void);
+
+        std::string get_first_name_ten(void);
 };
 
 class PhoneBook {

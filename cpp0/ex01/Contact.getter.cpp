@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 20:24:51 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/13 21:39:11 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/14 21:22:08 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,23 +21,20 @@ std::string Contact::get_first_name(){
     return (fname);
 }
 
-// std::string Contact::get_first_name(){
-//     std::string fname;
-//     fname = first_name;
-//     if (fname.length() > 10){
-//         for (int j = 0; j < 9; j++)
-//             fname[j] = first_name[j];
-//         fname[9] = '.';
-//     }
-//     else if (fname.length() < 10){
-//         for (int j = 0; j < 10; j++){
-//             if (fname[j] == '\0')
-//                 fname[j] = ' ';
-//         }
-//     }
-//     fname[10] = '\0';
-//     return (fname);
-// }
+std::string Contact::get_first_name_ten(){
+    std::string fname;
+    if (first_name.length() > 10){
+        fname = first_name;
+        fname.resize(9);
+        fname += '.';
+    }
+    else if (first_name.length() < 10){
+        fname = first_name;
+        fname.resize(10, ' ');
+        // std::setw()
+    }
+    return (fname);
+}
 
 std::string Contact::get_last_name(){
 

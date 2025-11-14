@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 18:52:38 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/13 21:30:07 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/14 21:16:34 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,12 @@ void PhoneBook::addContact(void){
 
 void PhoneBook::searchContact(void){
 
-    // std::cout << " __________ __________ __________ __________" << std::endl;
-    // std::cout << "|Index     |First Name|Last Name |Nickname  |" << std::endl;
-    // std::cout << " ---------- ---------- ---------- ----------" << std::endl;
-    // for (int j = 0; j < 8; j++){
-    //     std::cout << i << "         " 
-    // }
+    std::cout << " __________ __________ __________ __________" << std::endl;
+    std::cout << "|Index     |First Name|Last Name |Nickname  |" << std::endl;
+    std::cout << " ---------- ---------- ---------- ----------" << std::endl;
+    for (int j = 0; j < 8; j++){
+        std::cout << i << "         ";
+    }
     return;
 }
 
@@ -57,7 +57,7 @@ void PhoneBook::secretComand(void){
     for (int j = 0; j < 8; j++)
     {
         std::cout << std::endl;
-        std::cout << "First Name      [ " << j << " ] --> '" << contact[j].get_first_name() << "'" << std::endl;
+        std::cout << "First Name      [ " << j << " ] --> '" << contact[j].get_first_name_ten() << "'" << std::endl;
         std::cout << "Last Name       [ " << j << " ] --> '" << contact[j].get_last_name() << "'" << std::endl;
         std::cout << "Nickname        [ " << j << " ] --> '" << contact[j].get_nickname() << "'" << std::endl;
         std::cout << "Phone Number    [ " << j << " ] --> '" << contact[j].get_phone_number() << "'" << std::endl;
