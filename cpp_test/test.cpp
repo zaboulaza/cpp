@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   test.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
+/*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 21:41:37 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/11 15:47:02 by zaboulaza        ###   ########.fr       */
+/*   Updated: 2025/11/12 19:33:07 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "test.hpp"
 
-Sample::Sample(void){
+Sample::Sample(int nb) : _foo(nb){
     std::cout << "Constructor called" << std::endl;
     return;
 }
@@ -23,7 +23,17 @@ Sample::~Sample(void){
     return;
 }
 
-void Sample::bar(void){
-    std::cout << "fonction bar call" << std::endl;
-    return;
+int Sample::getfoo(void) const{
+    std::cout << "getfoo == " << this->_foo << std::endl;
+    return this->_foo;
+}
+
+int Sample::compare(Sample *other) const{
+    std::cout << "fonction compare call" << std::endl;
+    std::cout << "compare " << other << std::endl;
+    if (this->_foo < other->getfoo())
+        return (-1);
+    else if (this->_foo > other->getfoo())
+        return (1);
+    return (0);
 }

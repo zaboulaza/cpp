@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   cpp_test.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 21:46:08 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/12 14:24:43 by nsmail           ###   ########.fr       */
+/*   Created: 2025/11/15 17:15:32 by nsmail            #+#    #+#             */
+/*   Updated: 2025/11/15 20:25:15 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "test.hpp"
+#include <iomanip>
+#include <string>
+#include <sstream> 
 
-int main(){
-    
-    Sample instance(42);
-    
-    std::cout << instance.compare(&instance) << std::endl;
-
-    return (0);
+int main(int ac, char **av)
+{
+    std::string str = "adsfadsfadsf";
+    int nb;
+    std::istringstream(str) >> nb;
+    nb = nb * 2;
+    std::cout << nb << std::endl;
 }

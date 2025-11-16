@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Account.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 21:46:08 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/12 14:24:43 by nsmail           ###   ########.fr       */
+/*   Created: 2025/11/16 02:54:35 by nsmail            #+#    #+#             */
+/*   Updated: 2025/11/16 03:35:17 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "test.hpp"
+#include "Account.hpp"
 
-int main(){
+Account::Account(int initial_deposit){
     
-    Sample instance(42);
     
-    std::cout << instance.compare(&instance) << std::endl;
+}
 
-    return (0);
+Account::~Account(void){
+    
+}
+
+void Account::displayAccountsInfos(){
+    
 }
