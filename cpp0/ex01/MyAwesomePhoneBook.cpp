@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 20:38:33 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/13 18:09:26 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/15 21:21:34 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,12 @@ int main(void)
         if (pb.i >= 8)
             pb.i = 0;
         std::cout << "please, enter commands --> ";
-        std::getline(std::cin, str);
-        if (pb.getcommands(str) == 3){
+        if (!std::getline(std::cin, str)){
+            std::cout << std::endl;
+            std::cout << "EXIT" << std::endl;
+            break;
+        }
+        else if (pb.getcommands(str) == 3){
             break;
         }
     }

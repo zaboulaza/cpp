@@ -6,30 +6,31 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 11:34:38 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/13 19:56:25 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/15 21:35:45 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook_Contact.class.hpp"
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 
 std::string PhoneBook::new_prompt(std::string prompt){
     
-    // std::cout << "new_prompt called" << std::endl;
     std::string result;
     
     std::cout << "please enter " << prompt << " --> ";
-    std::getline(std::cin, result);
-    
+    if (!std::getline(std::cin, result)){
+        std::cout << std::endl;
+        std::cout << "EXIT" << std::endl;
+        exit(1);
+    }
     return (result);
 }
 
 int PhoneBook::find_FirstName(std::string fname){
     
-    // std::cout << "find_FirstName called" << std::endl;
-
     if (fname.length() < 2)
     {
         std::cout << "You must enter at least 2 characters." << std::endl;
