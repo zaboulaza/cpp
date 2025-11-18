@@ -1,10 +1,8 @@
-SRCS =	MyAwesomePhoneBook.cpp \
-		PhoneBook.cpp \
-		Contact.setter.cpp \
-		Contact.getter.cpp \
-		PhoneBookUtils.cpp
+SRCS =	Account.cpp \
+		tests.cpp 
+
 CC =	c++ -Wall -Werror -Wextra -std=c++98
-NAME =	PhoneBook
+NAME =	Account
 OBJS =	$(SRCS:.cpp=.o)
 
 all : $(NAME)

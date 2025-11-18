@@ -16,7 +16,6 @@
 //                               Account Class                                //
 // ************************************************************************** //
 
-
 class Account {
 
 
@@ -52,8 +51,10 @@ private:
 	int				_amount;
 	int				_nbDeposits;
 	int				_nbWithdrawals;
+	static int 		_comptaccount;
 
 	Account( void );
+
 };
 
 
