@@ -1,10 +1,7 @@
-SRCS =	newZombie.cpp \
-		randomChump.cpp \
-		Zombie.cpp \
-		main.cpp
+SRCS =	main.cpp
 
 CC =	c++ -Wall -Werror -Wextra -std=c++98
-NAME =	BraiiiiiiinnnzzzZ
+NAME =	HI_THIS_IS_BRAIN!
 OBJS =	$(SRCS:.cpp=.o)
 
 all : $(NAME)

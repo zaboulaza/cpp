@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/18 04:52:54 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/19 19:12:52 by nsmail           ###   ########.fr       */
+/*   Created: 2025/11/22 04:34:47 by nsmail            #+#    #+#             */
+/*   Updated: 2025/11/22 04:43:34 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#pragma once
+#include <string>
 
-Zombie::Zombie(std::string name){
+class Harl {
+    
+    public:
 
-    _name = name;
-    return;
-}
+        void complain(std::string level);
+    
+    private:
 
-Zombie::~Zombie(void){
-
-    std::cout << _name << " was destroy" << std::endl;
-    return;
-}
-
-void Zombie::annouce(){
-
-    std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-    return;
-}
+        void debug(void);
+        void info(void);
+        void warning(void);
+        void error(void);
+};

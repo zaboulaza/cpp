@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 04:52:17 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/19 18:36:56 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/19 19:12:33 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 #include <string>
 #include <iostream>
 
-Zombie *newZombie(std::string name);
-void randomChump(std::string name);
 
 class Zombie {
     
@@ -29,5 +27,8 @@ class Zombie {
     
     private:
     
-    std::string _name;
+        std::string _name;
 };
+
+Zombie *newZombie(std::string name);
+void randomChump(std::string name);

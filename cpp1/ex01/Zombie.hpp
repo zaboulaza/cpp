@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/18 04:52:54 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/19 19:12:52 by nsmail           ###   ########.fr       */
+/*   Created: 2025/11/19 20:40:59 by nsmail            #+#    #+#             */
+/*   Updated: 2025/11/19 22:26:51 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#pragma once
 
-Zombie::Zombie(std::string name){
+#include <string>
+#include <iostream>
 
-    _name = name;
-    return;
-}
+class Zombie{
+    
+    public:
+        
+        Zombie();
+        ~Zombie();
 
-Zombie::~Zombie(void){
+        void annouce(std::string name);
+        void setName(std::string name);
+    
+    private:
+        
+        std::string _name;
+};
 
-    std::cout << _name << " was destroy" << std::endl;
-    return;
-}
-
-void Zombie::annouce(){
-
-    std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-    return;
-}
+Zombie *zombieHorde(int N, std::string name);

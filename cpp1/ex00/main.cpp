@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 04:51:58 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/19 18:16:35 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/19 19:22:59 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 int main(void){
 
-    Zombie zz;
-    
+    randomChump("test");
+    Zombie *a = newZombie("zz1");
+    a->annouce();
+    delete a;
     return(1);
 }
