@@ -3,7 +3,7 @@ SRCS =	main.cpp \
 
 CC =	c++ -Wall -Wextra -Werror -std=c++98
 
-NAME =	 Fixed
+NAME =	 Harl_2.0
 OBJS =	$(SRCS:.cpp=.o)
 
 all : $(NAME)

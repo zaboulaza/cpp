@@ -2,7 +2,7 @@ SRCS =	main.cpp \
 		Fixed.cpp \
 		Fixed_operator.cpp 
 
-CC =	c++ -std=c++98
+CC =	c++ -Wall -Wextra -Werror -std=c++98
 NAME =	 Harl_2.0
 OBJS =	$(SRCS:.cpp=.o)
 

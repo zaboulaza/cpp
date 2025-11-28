@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
+/*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 00:34:31 by zaboulaza         #+#    #+#             */
-/*   Updated: 2025/11/25 06:01:37 by zaboulaza        ###   ########.fr       */
+/*   Updated: 2025/11/26 19:36:54 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ class Fixed {
     private:
 
         int _fixed_point;
-        static const int _nb_of_fractional_bits = 8;
+        static const int _bits = 8;
 };

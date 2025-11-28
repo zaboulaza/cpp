@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 02:04:29 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/28 02:05:55 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/11/28 02:06:39 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,35 +23,12 @@ class Fixed {
         Fixed(const int nb);
         Fixed(const float nb);
         Fixed(const Fixed &fixed);
+        Fixed &operator=(const Fixed &fixed);
         ~Fixed();
-
         int getRawBits(void) const;
         void setRawBits(int const raw);
         float toFloat(void) const;
         int toInt(void) const;
-        
-        Fixed &operator=(const Fixed &fixed);
-
-        Fixed &operator-(const Fixed &fixed);
-        Fixed &operator+(const Fixed &fixed);
-        Fixed &operator*(const Fixed &fixed);
-        Fixed &operator/(const Fixed &fixed);
-
-        
-        int operator>(const Fixed &fixed);
-        int operator<(const Fixed &fixed);
-        int operator>=(const Fixed &fixed);
-        int operator<=(const Fixed &fixed);
-        int operator==(const Fixed &fixed);
-        int operator!=(const Fixed &fixed);
-
-        Fixed& operator++();        
-        Fixed operator++(int);
-        Fixed& operator--();        
-        Fixed operator--(int);
-
-        static const Fixed &max(const Fixed &fixed1, const Fixed &fixed2);
-        static Fixed &max(Fixed &fixed1, Fixed &fixed2);
             
     private:
     
