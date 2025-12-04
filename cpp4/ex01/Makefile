@@ -1,7 +1,7 @@
 SRCS =	main.cpp \
 		animal.cpp 
 
-CC =	c++ -std=c++98
+CC =	c++ -Wall -Wextra -Werror -std=c++98
 NAME =	 Animal
 OBJS =	$(SRCS:.cpp=.o)
 

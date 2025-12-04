@@ -6,7 +6,7 @@
 /*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/03 02:42:22 by zaboulaza         #+#    #+#             */
-/*   Updated: 2025/12/03 06:37:30 by zaboulaza        ###   ########.fr       */
+/*   Updated: 2025/12/04 02:16:13 by zaboulaza        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ class Animal {
         Animal();
         virtual ~Animal();
         std::string getType(void) const;
-        virtual void makeSound(void) const;
+        virtual void makeSound(void) const = 0;
     
     protected:
     

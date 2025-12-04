@@ -6,7 +6,7 @@
 /*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/01 21:07:20 by zaboulaza         #+#    #+#             */
-/*   Updated: 2025/12/01 23:18:25 by zaboulaza        ###   ########.fr       */
+/*   Updated: 2025/12/03 23:28:59 by zaboulaza        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ DiamondTrap::DiamondTrap() : ClapTrap("toto_clap_name") {
 
 DiamondTrap::DiamondTrap(const std::string name) : ClapTrap("toto_clap_name") {
     std::cout << "DiamondTrap constructor name called" << std::endl;
-    
+
     this->_name = name;
     this->_Hit = FragTrap::_Hit;
     this->_Energy = ScavTrap::_Energy;
