@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cpp_test.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
+/*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 17:15:32 by nsmail            #+#    #+#             */
-/*   Updated: 2025/11/25 03:06:49 by zaboulaza        ###   ########.fr       */
+/*   Updated: 2025/11/28 01:40:05 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,25 @@
 #include <iomanip>
 #include <string>
 #include <sstream> 
+#include <cmath>
 
-int main()
-{
-    std::string str = "adsfadsfadsf";
-    std::string *str2 = &str;
-    std::string &str3 = str;
+int main(){
+    // int nb = 10 * 256;
+    // int nb = 50 << 8;
+    // float ff;
+    // ff = (float)nb / 256;
+    // std::cout << ff << std::endl;
 
-    std::cout << "str --->  " << &str << "   content = " << str << std::endl;
-    std::cout << "str2 ---> " << str2 << "   content = " << *str2 << std::endl;
-    std::cout << "str3 ---> " << &str3 << "   content = " << str3 << std::endl;
-    
-    *str2 = "test";
-    
-    std::cout << std::endl;
-    std::cout << "str --->  " << &str << "   content = " << str << std::endl;
-    std::cout << "str2 ---> " << str2 << "   content = " << *str2 << std::endl;
-    std::cout << "str3 ---> " << &str3 << "   content = " << str3 << std::endl;
-
+    float ff = 5.05f;
+    // int nb = round(ff * std::pow(2, 8));
+    int nb = roundf(ff * (1 << 8));
+    // ff = (float)(nb / std::pow(2, 8));
+    ff = (float)nb / 256;
+    // float ff = (float)nb / 256;
+    std::cout << ff * 2<< std::endl;
+    // float f = 42.42f;
+    // f = roundf(f);
+    // std::cout << f << std::endl;
+    //    bits(nb);
+   return 0;
 }
