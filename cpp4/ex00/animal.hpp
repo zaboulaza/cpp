@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/03 02:42:22 by zaboulaza         #+#    #+#             */
-/*   Updated: 2025/12/10 13:34:34 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/15 16:08:18 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Animal {
 
         Animal();
         virtual ~Animal();
-        std::string getType(void) const;
+            
         virtual void makeSound(void) const;
     
     protected:

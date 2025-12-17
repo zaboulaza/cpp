@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 15:52:10 by nsmail            #+#    #+#             */
-/*   Updated: 2025/12/16 18:35:05 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/17 16:20:14 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ Bureaucrat::Bureaucrat(const Bureaucrat &bur){
     *this = bur;
 }
 
-Bureaucrat::Bureaucrat(std::string name, int i): _name(name){
+Bureaucrat::Bureaucrat(const std::string name, int i): _name(name){
     std::cout << "bur constructor called" << std::endl;
     if (i < 1)
         throw ToLow();

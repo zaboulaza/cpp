@@ -6,11 +6,12 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 15:40:07 by nsmail            #+#    #+#             */
-/*   Updated: 2025/12/16 18:20:03 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/17 16:02:17 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
+#include "Form.hpp"
 #include <string>
 #include <iostream>
 
@@ -20,7 +21,7 @@ class Bureaucrat {
 
         Bureaucrat();
         Bureaucrat( const Bureaucrat &bur);
-        Bureaucrat(std::string name, int i);
+        Bureaucrat(const std::string name, int i);
         Bureaucrat &operator=(const Bureaucrat &bur);
         ~Bureaucrat();
         
@@ -29,6 +30,7 @@ class Bureaucrat {
     
         void increment();
         void decrement();
+        void signForm(Form &form);
 
         
         private:
@@ -52,5 +54,3 @@ class Bureaucrat {
     };
     
 std::ostream &operator<<(std::ostream &out, const Bureaucrat &bur);
-
-
