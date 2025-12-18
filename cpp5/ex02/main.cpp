@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 18:09:50 by nsmail            #+#    #+#             */
-/*   Updated: 2025/12/18 16:41:22 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/18 16:58:53 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,4 @@ bureacrat  toto("toto", 1);
 samuel.sign(form)
 antoine.execute
 antoine.sign(form)
-
-
-
-
 

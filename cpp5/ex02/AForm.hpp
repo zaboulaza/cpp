@@ -14,7 +14,7 @@
 #include <iostream>
 #include <string>
 
-class Bureaucrat;  // Forward declaration
+class Bureaucrat;
 
 class AForm {
 
@@ -37,7 +37,13 @@ class AForm {
 
             class NotSigned : public std::exception {
                 const char *what() const throw(){
-                    return ("are not signed");
+                    return ("can't signed");
+                }
+            };
+
+            class NotExecute : public std::exception {
+                const char *what() const throw(){
+                    return ("can't execute");
                 }
             };
 
