@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 18:09:50 by nsmail            #+#    #+#             */
-/*   Updated: 2025/12/16 18:38:33 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/18 06:33:48 by zaboulaza        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ int main(){
 
     try{
         Bureaucrat zabou("zaboulaza", 2);
-        std::cout << zabou;
-        zabou.decrement();
-        std::cout << zabou;
-        zabou.decrement();
-        std::cout << zabou;
+        // Bureaucrat zabou("zaboulaza", 100);
+        // Form formulaire("nunu", 200, 50);
+        Form formulaire("nunu", 100, 50);
+        std::cout << formulaire;
+        zabou.signForm(formulaire);
     }
     catch (std::exception &e){
         std::cout << "Erreur : " << e.what() << std::endl;

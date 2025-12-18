@@ -1,5 +1,6 @@
 SRCS =	main.cpp \
-		Bureaucrat.cpp 
+		Bureaucrat.cpp \
+		Form.cpp
 
 CC =	c++ -Wall -Wextra -Werror -std=c++98
 NAME =	 Bureaucat
