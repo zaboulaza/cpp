@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 14:41:08 by nsmail            #+#    #+#             */
-/*   Updated: 2025/12/18 16:43:54 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/21 08:47:54 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,6 @@ void PresidentialPardonForm::execute(Bureaucrat const &executor) const{
         throw NotSigned();
     if (this->getGrade_exec() < executor.getGrade())
         throw NotExecute();
+    std::cout << executor.getName() << " executed " << this->_target << std::endl;
     std::cout << _target << " has been pardoned by Zaphod Beeblebrox." << std::endl;
 }

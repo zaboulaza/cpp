@@ -6,12 +6,12 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 15:40:07 by nsmail            #+#    #+#             */
-/*   Updated: 2025/12/17 16:02:17 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/21 08:40:49 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
-#include "Form.hpp"
+#include "AForm.hpp"
 #include <string>
 #include <iostream>
 
@@ -30,7 +30,8 @@ class Bureaucrat {
     
         void increment();
         void decrement();
-        void signForm(Form &form);
+        void signAForm(AForm &Aform);
+        void executeForm(AForm const & form) const;
 
         
         private:
