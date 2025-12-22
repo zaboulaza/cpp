@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Intern.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/21 11:22:48 by nsmail            #+#    #+#             */
-/*   Updated: 2025/12/21 14:41:53 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/22 14:27:31 by zaboulaza        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "PresidentialPardonForm.hpp"
 #include "iostream"
 
-AForm &Intern::makeForm(std::string form_name, std::string target{
+AForm *Intern::makeForm(std::string form_name, std::string target){
     
     Intern intern;
     
@@ -26,7 +26,7 @@ AForm &Intern::makeForm(std::string form_name, std::string target{
         "presidential pardon"
     };
 
-    AForm* (Intern::*action[])(const std::string&) = {
+    AForm *(Intern::*action[])(const std::string&) = {
         &Intern::createRobotomy,
         &Intern::createShrubbery,
         &Intern::createPresidential
@@ -34,10 +34,10 @@ AForm &Intern::makeForm(std::string form_name, std::string target{
 
     for(int j = 0; j < 3; j++){
         if (form_name == levels[j]){
-            return *(intern.*action[j])(target);
+            return (this->*action[j])(target);
         }
     }
-    throw std::runtime_error("Form not found");
+    throw NotFound();
 }
 
 
@@ -51,4 +51,13 @@ AForm* Intern::createRobotomy(const std::string &target){
 
 AForm* Intern::createPresidential(const std::string &target){
     return (new PresidentialPardonForm(target));
+}
+
+Intern::Intern(const Intern &intern){
+    *this = intern;
+}
+
+Intern &Intern::operator=(const Intern &intern){
+    (void)intern;
+    return (*this);
 }
