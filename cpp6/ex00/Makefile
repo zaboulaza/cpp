@@ -1,8 +1,8 @@
 SRCS =	main.cpp \
-		ScalarConverter.cpp
+		ScalarConverter.cpp 
 
-CC =	c++ -Wall -Wextra -Werror -std=c++98
-NAME =	 Scalar
+CC =	c++ -std=c++98
+NAME =	 scalar
 OBJS =	$(SRCS:.cpp=.o)
 
 all : $(NAME)
