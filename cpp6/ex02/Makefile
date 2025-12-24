@@ -1,8 +1,9 @@
 SRCS =	main.cpp \
-		Serialization.cpp 
+		Base.cpp 
 
 CC =	c++ -std=c++98
-NAME =	 serialization
+
+NAME =	 Identify
 OBJS =	$(SRCS:.cpp=.o)
 
 all : $(NAME)

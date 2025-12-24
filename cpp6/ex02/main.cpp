@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Serialization.hpp                                  :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/22 17:42:34 by zaboulaza         #+#    #+#             */
-/*   Updated: 2025/12/24 15:19:08 by nsmail           ###   ########.fr       */
+/*   Created: 2025/12/22 17:42:29 by zaboulaza         #+#    #+#             */
+/*   Updated: 2025/12/24 16:59:17 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-#include <string>
-#include <iostream>
-#include <stdint.h>
+#include "Base.hpp"
 
-typedef struct s_data{
-    int i;
-} Data;
-
-class Serializer {
+int main(){
     
-    public :
+    std::srand(std::time(NULL));
 
-        Serializer() {};
-        ~Serializer() {};
-        // Serializer(Serializer &serializer);
-        // Serializer &operator=(const Serializer &serializer);
-
-        static uintptr_t serialize(Data *ptr);
-        static Data *deserialize(uintptr_t raw);
+    Base *base = Base::generate();
+    // Base::identify(base);
+    Base::identify(*base);
+    delete base;
     
-};
+    return (1);
+}

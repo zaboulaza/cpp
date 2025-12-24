@@ -6,18 +6,24 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 17:42:29 by zaboulaza         #+#    #+#             */
-/*   Updated: 2025/12/23 22:02:07 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/24 15:29:56 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScalarConverter.hpp"
+#include "Serialization.hpp"
 
-int main(int ac, char **av){
+int main(){
     
-    if(ac != 2){
-        std::cout << "Error : you need to put one arg" << std::endl;
-        return (0);
-    }
+    Data dat;
+
+    dat.i = 23;
+
+    Data *ptr = &dat;
+    
+    uintptr_t raw = Serializer::serialize(ptr);
+    std::cout << raw << std::endl;
+
+    std::cout << Serializer::deserialize(raw) << std::endl;
     
     return (1);
 }
