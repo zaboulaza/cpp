@@ -6,7 +6,7 @@
 /*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 17:47:06 by zaboulaza         #+#    #+#             */
-/*   Updated: 2025/12/24 16:59:42 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/27 15:30:46 by nsmail           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ void Base::identify(Base &p){
     catch(std::exception &e){
         std::cout << "identify A failed" << std::endl;
     }
-    
     try{
         (void)dynamic_cast<B&>(p);
         std::cout << "B" << std::endl;
