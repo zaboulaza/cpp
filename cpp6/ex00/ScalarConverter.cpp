@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.cpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nsmail <nsmail@student.42.fr>              +#+  +:+       +#+        */
+/*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 17:47:06 by zaboulaza         #+#    #+#             */
-/*   Updated: 2025/12/23 20:19:23 by nsmail           ###   ########.fr       */
+/*   Updated: 2025/12/29 14:55:51 by zaboulaza        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 //     return (*this);
 // }
 
-void Scalar::convert(std::string av){
+void Scalar::convert(std::string av) {
     
     // std::cout << av << std::endl;
     char c = av[0];
