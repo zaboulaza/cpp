@@ -1,5 +1,5 @@
-SRCS =	main.cpp 
-
+SRCS =	main.cpp \
+		Span.cpp
 CC =	c++ -std=c++98
 
 NAME =	 Identify
