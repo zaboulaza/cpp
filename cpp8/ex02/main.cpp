@@ -12,15 +12,6 @@
 
 #include "MutanStack.hpp"
 
-// int main(){
-
-//     MutantStack<std::string> string_stack;
-
-    
-    
-//     return (1);
-// }
-
 int main(){
     
     MutantStack<int> mstack;
