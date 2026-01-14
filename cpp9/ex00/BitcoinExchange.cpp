@@ -6,7 +6,7 @@
 /*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 14:46:21 by zaboulaza         #+#    #+#             */
-/*   Updated: 2026/01/14 22:51:33 by zaboulaza        ###   ########.fr       */
+/*   Updated: 2026/01/14 23:09:17 by zaboulaza        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ int BitcoinExchange::verif_good_format(std::string str){
         return (0);
     if(str[10] != ',')
         return (0);
-
     return (1);
 }
 
