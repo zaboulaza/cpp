@@ -6,7 +6,7 @@
 /*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 14:46:21 by zaboulaza         #+#    #+#             */
-/*   Updated: 2026/01/14 23:09:17 by zaboulaza        ###   ########.fr       */
+/*   Updated: 2026/01/14 23:16:32 by zaboulaza        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,8 @@ BitcoinExchange::BitcoinExchange(const BitcoinExchange &btc){
 }
 
 BitcoinExchange &BitcoinExchange::operator=(const BitcoinExchange &btc){
-    if (this != &btc)
-        int i = 0;
-   return (*this);
+    (void)btc;
+    return (*this);
 }
 
 int BitcoinExchange::verif_good_format(std::string str){

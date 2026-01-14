@@ -6,7 +6,7 @@
 /*   By: zaboulaza <zaboulaza@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/13 14:46:10 by zaboulaza         #+#    #+#             */
-/*   Updated: 2026/01/14 23:05:05 by zaboulaza        ###   ########.fr       */
+/*   Updated: 2026/01/14 23:15:18 by zaboulaza        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int main(int ac, char **av){
     }
 
     std::ifstream ifs2;
-    ifs2.open("input.txt", std::ifstream::in);
+    ifs2.open(av[1], std::ifstream::in);
     if (!ifs2){
         std::cout << "Error : Can not open file ---> input.txt" << std::endl;
         return (0);
